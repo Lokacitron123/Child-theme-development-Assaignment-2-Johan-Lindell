@@ -1,0 +1,76 @@
+/**
+ * Theme Name: Blocksy Child
+ * Description: Blocksy Child theme
+ * Author: Creative Themes
+ * Template: blocksy
+ * Text Domain: blocksy
+ */
+
+:root {
+  --fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --fontWeight: 400;
+  --textTransform: none;
+  --textDecoration: none;
+  --fontSize: 16px;
+  --lineHeight: 1.65;
+  --letterSpacing: 0em;
+  --buttonFontWeight: 500;
+  --buttonFontSize: 15px;
+  --has-classic-forms: var(--true);
+  --has-modern-forms: var(--false);
+  --form-field-initial-background: var(--paletteColor8);
+  --form-field-focus-background: var(--paletteColor8);
+  --form-field-height: 45px;
+  --form-field-border-radius: 0px;
+  --form-field-border-initial-color: #e0e5eb;
+  --form-field-border-focus-color: var(--paletteColor1);
+  --form-selection-control-initial-color: var(--border-color);
+  --form-selection-control-accent-color: var(--paletteColor1);
+  /* Changed --paletteColor1 from red to green - Turns interactable items, such as button and nav-items to have green colour as either their background colour or on their hover effects */
+  --paletteColor1: green;
+  --paletteColor2: #e8363c;
+  --paletteColor3: #687279;
+  --paletteColor4: #131117;
+  --paletteColor5: #d9dadc;
+  --paletteColor6: #e8e8e8;
+  --paletteColor7: #fbfbfb;
+  --paletteColor8: #ffffff;
+  --color: var(--paletteColor3);
+  --linkInitialColor: var(--paletteColor1);
+  --linkHoverColor: var(--paletteColor2);
+  --selectionTextColor: #ffffff;
+  --selectionBackgroundColor: var(--paletteColor1);
+  --border-color: var(--paletteColor5);
+  --headings-color: var(--paletteColor4);
+  --content-spacing: 1.5em;
+  --buttonMinHeight: 45px;
+  --buttonShadow: none;
+  --buttonTransform: none;
+  --buttonTextInitialColor: #ffffff;
+  --buttonTextHoverColor: #ffffff;
+  --buttonInitialColor: var(--paletteColor1);
+  --buttonHoverColor: var(--paletteColor2);
+  --button-border: none;
+  --buttonBorderRadius: 0px;
+  --button-padding: 5px 20px;
+  --normal-container-max-width: 1290px;
+  --content-vertical-spacing: 60px;
+  --narrow-container-max-width: 750px;
+  --wide-offset: 130px;
+}
+
+.productCustomProduct {
+  position: relative;
+}
+
+/* Styles the element which shows how many items there are left in stock */
+.productCustomProductItems {
+  position: absolute;
+  z-index: 100;
+  background-color: white;
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
